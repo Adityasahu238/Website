@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 5vh;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .logo{
+    color: white;
+    font-size: 3em;
+    position: relative;
+    right: 10vw;
+    font-weight: 600;
+    cursor: pointer;
+    padding-left: 10vw;
+}
+nav .nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+nav .nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+nav .nav-links .login-btn{
+    height: 3.5vh;
+    width: 10vw;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav{
+        height: 6vh;
+    }
+    nav .logo{
+        position: relative;
+        right: 0;
+        padding-right: 20vw;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 1440px){
+    nav .nav-links a {
+        font-size: 2.2em;
+    }
+    nav .logo{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 1024px){
+    nav .nav-links a {
+        font-size: 1.5em;
+    }
+    nav .logo{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 768px){
+    nav .nav-links a {
+        font-size: 1.2em;
+    }
+    nav .logo{
+        font-size: 2em;
+        position: relative;
+        right: 0;
+    }
+}
